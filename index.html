@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="Home after-animate" dir="ltr">
+
+    <script>
+        var loadingElem = document.getElementById("pageLoad");
+        loadingElem.classList.add("is-running");
+        document.body.classList.add("before-animate");
+        addEventListener('load', function () {
+            var loadingElem = document.getElementById("pageLoad");
+            loadingElem.classList.remove("is-running");
+            loadingElem.classList.add("is-done");
+            document.body.classList.remove("before-animate");
+            document.body.classList.add("after-animate");
+            setTimeout(function () {
+                loadingElem.remove();
+            }, 250);
+        });
+    </script>
+    <header class="header header-mini" theme="white-black">
+        <div class="inner">
+            <div class="d-flex justify-content-between">
+                <a class="brand" href="#">
+                    <img class="logo-n-black" src="images/neromotion-logo-n-black.svg"
+                        title="logo">
+                    <img class="logo-white" src="images/blomqvist_Logo_w.png"
+                        title="logo">
+                    <img class="logo-black" src="images/neromotion-logo-black.svg"
+                        title="logo">
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="toggle-menu">
+            <div class="inner">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <div class="menu-full">
+        <div class="align-items-center d-flex inner justify-content-center">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <div class="menu-close toggle-menu"></div>
+        </div>
+        <div class="menu-bg"></div>
+    </div>
+    <div class="scroll-guide">
+        <div></div>
+        <span>SCROLL</span>
+    </div>
+    <div class="stage-indicator">
+        <div class="stage is-current" stage-background-size="half-to-full" style="height: 40vh;">
+            <div class="stage-item" style="height: 100%;" target=".hero .front h1" target-action="to-right"></div>
+            <div class="stage-item" style="height: 100%;top: -100%;" target=".hero .back> .bb:first .inner" target-action="fade-in"></div>
+            <div class="stage-item" style="height: 100%;/* top: -200% */" target=".scroll-guide" target-action="fade-out"></div>
+        </div>
+        <div class="stage" stage-background-color-begin="orange" stage-background-color-end="#FFFFFF" style="height: 50vh;">
+            <div class="stage-item" style="height: 50%;" target=".hero .front h1" target-action="fade-up"></div>
+            <div class="stage-item" style="height: 50%; top: -50%" target=".hero .back> .bb:first .inner" target-action="fade-up"></div>
+        </div>
+        <div class="stage" style="height: 30vh;">
+            <div class="stage-item" style="position: absolute; top: 0;height: 100%;" target=".stage-background .color-background"
+                target-action="shadow-in"></div>
+            <div class="stage-item" style="height: 100%;" target="#words .inner:eq(0) .words-item" target-action="fade-in"></div>
+        </div>
+        <div class="stage-delay" style="height: 20vh;"></div>
+        <div class="stage" style="height: 60vh;">
+            <div class="stage-item" style="height: 100%" target="#words> .inner" target-action="scroll-up"></div>
+        </div>
+    </div>
+    <div class="stage-background" style="width: 50%;">
+        <div class="color-background" style="box-shadow: none; background-color: orange;"></div>
+    </div>
+    <div class="main" role="main">
+        <div class="hero" header-theme="white-black">
+            <div class="front">
+                <h1 class="size-1" style="right: 0px; margin-top: 0px; opacity: 1;">POWERFUL DIGITAL CREATIONS.</h1>
+            </div>
+            <div class="back">
+                <div class="bb">
+                    <div class="inner" style="opacity: 0.34153; margin-top: 0.327448px;">
+                        <p>We are a digital-first agency that thrives on creative collaboration with clients to deliver digital
+                            ‘WOW’.</p>
+                    </div>
+                </div>
+                <div class="bb">
+                    <div class="inner"></div>
+                </div>
+            </div>
+        </div>
+        <section class="section" id="words">
+            <div class="align-items-center d-flex inner justify-content-center" style="top: 0px;">
+                <div class="wrap">
+                    <h4>WHAT WE DO</h4>
+                    <ul>
+                        <li>
+                            <h5>Design</h5>
+                            <div class="align-items-center d-flex">
+                                <ul>
+                                    <li>Banners</li>
+                                    <li>Advertising</li>
+                                    <li>Animation</li>
+                                    <li>Video</li>
+                                    <li>Communications</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>Website</h5>
+                            <div class="align-items-center d-flex">
+                                <ul>
+                                    <li>Silverstripe</li>
+                                    <li>Content</li>
+                                    <li>UX Design</li>
+                                    <li>E-commerce</li>
+                                    <li>Hosting</li>
+                                    <li>Optimisation</li>
+                                    <li>Security</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>Branding</h5>
+                            <div class="align-items-center d-flex">
+                                <ul>
+                                    <li>Strategy</li>
+                                    <li>Guidelines</li>
+                                    <li>Identity</li>
+                                    <li>Brand DNA</li>
+                                    <li>Brand Story</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>Development</h5>
+                            <div class="align-items-center d-flex">
+                                <ul>
+                                    <li>Mobile Apps</li>
+                                    <li>iOS</li>
+                                    <li>Android</li>
+                                    <li>Database</li>
+                                    <li>API Integration</li>
+                                    <li>Cloud</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>SEM</h5>
+                            <div class="align-items-center d-flex">
+                                <ul>
+                                    <li>AdWords</li>
+                                    <li>SEO</li>
+                                    <li>Google for Business</li>
+                                    <li>Google Analytics</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>Strategy</h5>
+                            <div class="align-items-center d-flex">
+                                <ul>
+                                    <li>Objectives</li>
+                                    <li>Customer Personas</li>
+                                    <li>Customer Journey</li>
+                                    <li>Metrics</li>
+                                    <li>Customer Experience</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="align-items-center d-flex justify-content-center section" header-theme="white-white" id="projects">
+            <div class="inner">
+                <h4>LATEST PROJECTS</h4>
+                <a href="/projects/sunglassstyle/">
+                    <h5>Sunglass Style</h5>
+                </a>
+                <a href="/projects/citroen-car-configurator/">
+                    <h5>Citroën Car Configurator</h5>
+                </a>
+                <a href="/projects/origin/">
+                    <h5>Origin</h5>
+                </a>
+                <h4>
+                    <a href="#">VIEW ALL PROJECTS</a>
+                </h4>
+            </div>
+        </section>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="head.mean.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

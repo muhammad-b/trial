@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="18px" viewBox="0 0 20 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo" transform="translate(-1.000000, -1.000000)" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="#ED2224" x="13.6315789" y="17.5630761" width="7.36842105" height="1.38461538"></rect>
+            <path d="M11.514936,2.67861369 C14.5647226,2.67861369 16.3399716,4.43144548 16.3399716,8.42400676 L16.3399716,16.0683009 L17.8421053,16.0683009 L17.8421053,8.13186813 C17.8421053,3.3602705 15.0654339,1.16923077 11.5604552,1.16923077 C8.92034139,1.16923077 6.64438122,2.58123415 5.55192034,4.86965342 L5.55192034,1.60743872 L1,1.60743872 L1,3.0194421 L4.04978663,3.0194421 L4.04978663,17.4803043 L1,17.4803043 L1,18.8923077 L8.60170697,18.8923077 L8.60170697,17.4803043 L5.55192034,17.4803043 L5.55192034,9.0569738 C5.55192034,5.11310228 8.05547653,2.67861369 11.514936,2.67861369 Z" id="Shape" fill="#000000"></path>
+        </g>
+    </g>
+</svg>
